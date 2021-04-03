@@ -1,0 +1,28 @@
+table, th, td {
+    border: 5px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    color: black;
+    image-rendering: auto;
+}
+
+#wiki {
+    text-align: center;
+}
+
+#wiki a{
+    text-decoration: none;
+    color: black;
+}
+
+#char {
+    max-width: 40px;
+}
+
+table th{
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+table td{
+    border: solid 1px black;
+    background-color: rgba(0, 0, 0, 0.034);
+}

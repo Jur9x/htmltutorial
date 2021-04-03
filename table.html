@@ -1,44 +1,92 @@
 <!DOCTYPE html>
 <html lang="cs">
     <head>
-        <title>Table</title>
+        <title>Table | Tutorial</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/table.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="icon" href="img/icon.ico">
     </head>
     <body>
-    <header><h1>Table</h1></header>
-    <main>
-        <h2>Karel Gott</h2>
-        <table border=1>
-            <caption>Vizitka</caption>
-            <thead><tr><th>Portrét</th><th colspan="2">Základní údaje</th><th>Významné činy</th></tr></thead>
-            <tbody>
-                <tr>
-                    <td rowspan="3"><img src="img/got.png" alt=""></td>
-                    <td colspan="2">Karel Gott</td>
-                    <td rowspan="4">Díla</td>
-                </tr>
-                <tr>
-                    <td>Narození</td>
-                    <td>Úmrtí</td>
-                </tr>
-                <tr>
-                    <td colspan="2" rowspan="2">Stručná charakteristika</td>
-                </tr>
-                <tr>
-                    <td>Fotka Karla Gotta</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4"><a href="https://cs.wikipedia.org/wiki/Karel_Gott"target="_blank">Wikipedie</a></td>
-                </tr>
-            </tfoot>
-        </table>
+        <img id="bck" class="center" src="media/gif.gif">
+    <header class="backwhite"><h1>Table (Tabulka)</h1></header>
+    <main class="backwhite">
+        <section id="tabulka">
+            <h2><span>Karel Gott</span></h2>
+            <table class="center">
+                <thead><tr><th>Portrét</th><th colspan="2">Základní údaje</th><th>Významné činy</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3"><img id="got" src="img/got.png" alt=""></td>
+                        <td colspan="2">Karel Gott</td>
+                        <td rowspan="4"><dl>
+                            <dt>Díla</dt>
+                            <dd>Trezor</dd>
+                            <dd>Oči sněhem zaváte</dd>
+                            <dd>Ptačí nářečí</dd>
+                            <dd>Včelka Mája</dd>
+                            <dd>Srdce nehasnou</dd>
+                            <dd>Jdi za štěstím</dd>
+                            <dd>Jen se hádej</dd>
+                            <dd>Lady Carneval</dd>
+                            <dd>Čau, lásko</dd>
+                        </dl></td>
+                    </tr>
+                    <tr>
+                        <td>14. 6. 1939</td>
+                        <td>1. 10. 2019</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="2" id="char">Byl český zpěvák, herec a malíř. V letech 1965–2019 se prodalo 50 milionů nosičů hudebních alb s jeho nahrávkami, což z něj učinilo nejúspěšnějšího českého interpreta. Během kariéry vydal 293 sólových alb na domácí scéně i v zahraničí. Zpíval nejen česky, ale i německy, latinsky, anglicky, italsky a rusky.</td>
+                    </tr>
+                    <tr>
+                        <td>Fotka Karla Gotta</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" id="wiki"><a href="https://cs.wikipedia.org/wiki/Karel_Gott" target="_blank">Wikipedie</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="atributy">
+            <h2><span class="borderbottom">Značky a atributy tabulky</span></h2>
+            <dl>
+                <dt><strong>colspan</strong></dt>
+                <dd>Atribut zajišťující rozpětí přes několik sloupců</dd>
+                <dt><strong>rowspan</strong></dt>
+                <dd>Atribut zajišťující rozpětí přes několik řádků</dd>
+                <dt><strong>id</strong></dt>
+                <dd>Atribut pro označení 1 tabulky </dd>
+                <h3 class="h3 italic"><span class="borderbottom">HTML (< >)</span></h3>
+                <dt><strong>table</strong></dt>
+                <dd>Základní atribut, tvoří tabulku</dd>
+                <dt><strong>tr</strong></dt>
+                <dd>Atribut, co označuje řádek tabulky</dd>
+                <dt><strong>td</strong></dt>
+                <dd>Atribut, co označuje data tabulky</dd>
+                <dt><strong>th</strong></dt>
+                <dd>Atribut, co označuje nadpisy</dd>
+                <dt><strong>caption</strong></dt>
+                <dd>Atribut, co přidává popisek tabulky</dd>
+                <h3 class="h3 italic"><span class="borderbottom">CSS</span></h3>
+                <dt><strong>border</strong></dt>
+                <dd>Definuje ohraničení tabulky</dd>
+                <dt><strong>border-collapse;</strong></dt>
+                <dd>Spojuje buňky tabulky dohromady</dd>
+                <dt><strong>padding</strong></dt>
+                <dd>Odsazení</dd>
+                <dt><strong>text-align</strong></dt>
+                <dd>Určení místa textu</dd>
+                <dt><strong>border-spacing</strong></dt>
+                <dd>Určuje místo mezi buňkami</dd>
+            </dl>
+        </section>
     </main>
-    <footer>
-        <p class="copy">&copy; 2021 - Ryba Jiří, <a href="https://www.sspu-opava.cz/cs/"target="_blank">SSPU Opava</a></p>
+    <footer class="backwhite">
+        <p>&copy; 2021 - Ryba Jiří, <a href="https://www.sspu-opava.cz/cs/" target="_blank">SSPU Opava</a></p>
     </footer>
     </body>
 </html>

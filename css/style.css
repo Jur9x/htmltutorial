@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+}
+
+header{
+    margin: auto;
+    max-width: 65%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: rgb(150, 0, 163) solid 4px;
+    border-top: hidden;
+    animation: 20s infinite change;
+}
+
+main{
+    margin: auto;
+    width: 65%;
+    padding-top: 15px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    border: rgb(150, 0, 163) solid 4px;
+    animation: 20s infinite change;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    max-width: 65%;
+    margin: auto;
+    border: rgb(150, 0, 163) solid 4px;
+    border-bottom: hidden;
+    animation: 20s infinite change;
+}
+
+#bck{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    right: 0;
+    z-index:-1;
+}
+
+.backwhite{
+    background: rgb(255, 247, 247) !important;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.borderbottom{
+    border-bottom: 2px solid black ;
+}
+
+.italic{
+    font-style: italic;
+}
+
+header > h1{
+    margin: 0;
+}
+
+section {
+font-size: 20px;
+text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(89, 128, 255);
+}
+
+footer a {
+    color: black;
+}
+
+h1{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h3{
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+@keyframes change {
+    0% {border-color: rgb(255, 225, 0);}
+    10% {border-color: rgb(187, 255, 0);}
+    20% {border-color: rgb(30, 255, 0);}
+    30% {border-color: rgb(0, 255, 145);}
+    40% {border-color: rgb(0, 255, 221);}
+    50% {border-color: rgb(14, 0, 138);} 
+    60% {border-color: rgb(255, 0, 212);}
+    70% {border-color: rgb(255, 0, 0);}
+    80% {border-color: rgb(255, 123, 0);}
+    90% {border-color: rgb(255, 196, 0);}
+    100% {border-color: rgb(255, 225, 0);}
+}

@@ -8,9 +8,7 @@ header{
     right: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: solid 4px;
-    border-top: hidden;
-    animation: 20s infinite change;
+    border-top: hidden !important;
 }
 
 main{
@@ -18,8 +16,6 @@ main{
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 68px auto 75px auto;
-    border: solid 4px;
-    animation: 20s infinite change;
 }
 
 footer {
@@ -31,9 +27,7 @@ footer {
     font-size: 20px;
     max-width: 65%;
     margin: auto;
-    border: solid 4px;
-    border-bottom: hidden;
-    animation: 20s infinite change;
+    border-bottom: hidden !important;
 }
 
 #bck{
@@ -47,6 +41,11 @@ footer {
     top: 0;
     right: 0;
     z-index:-1;
+}
+
+.border{
+    border: solid 4px;
+    animation: 20s infinite change;
 }
 
 .backwhite{
@@ -99,6 +98,23 @@ h3{
     font-size: 23px;
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+img{
+    border: 2px black solid;
+}
+
+.backtomain{
+    max-height: min-content;
+    padding: 2px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.backtomain a{
+    color: black;
 }
 
 @keyframes change {

@@ -1,55 +1,74 @@
 header{
+    font-size: 20px;
     margin: auto;
-    max-width: 65%;
+    max-width: 100%;
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-top: hidden !important;
+    border-left: hidden !important;
+    border-right: hidden !important;
 }
 
 main{
-    width: 65%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    font-size: 20px;
+    width: 80%;
+    padding-top: 35px;
+    padding-bottom: 35px;
     margin: 68px auto 75px auto;
 }
 
 footer {
+    font-size: 20px;
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    text-align: center;
-    font-size: 20px;
-    max-width: 65%;
-    margin: auto;
     border-bottom: hidden !important;
+    border-left: hidden !important;
+    border-right: hidden !important;
 }
 
-#bck{
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    right: 0;
-    z-index:-1;
+footer a {
+    color: white;
 }
 
 .border{
     border: solid 4px;
-    animation: 20s infinite change;
+    animation: 20s infinite changecolor;
 }
 
-.backwhite{
-    background: rgb(255, 247, 247) !important;
+@keyframes changecolor {
+    0% {border-color: rgb(255, 225, 0);}
+    10% {border-color: rgb(187, 255, 0);}
+    20% {border-color: rgb(30, 255, 0);}
+    30% {border-color: rgb(0, 255, 145);}
+    40% {border-color: rgb(0, 255, 221);}
+    50% {border-color: rgb(14, 0, 138);} 
+    60% {border-color: rgb(255, 0, 212);}
+    70% {border-color: rgb(255, 0, 0);}
+    80% {border-color: rgb(255, 123, 0);}
+    90% {border-color: rgb(255, 196, 0);}
+    100% {border-color: rgb(255, 225, 0);}
+}
+
+@keyframes changebck {
+    0% {background-color: rgb(255, 225, 0);}
+    10% {background-color: rgb(187, 255, 0);}
+    20% {background-color: rgb(30, 255, 0);}
+    30% {background-color: rgb(0, 255, 145);}
+    40% {background-color: rgb(0, 255, 221);}
+    50% {background-color: rgb(14, 0, 138);} 
+    60% {background-color: rgb(255, 0, 212);}
+    70% {background-color: rgb(255, 0, 0);}
+    80% {background-color: rgb(255, 123, 0);}
+    90% {background-color: rgb(255, 196, 0);}
+    100% {background-color: rgb(255, 225, 0);}
 }
 
 .center {
@@ -66,21 +85,18 @@ footer {
 }
 
 header > h1{
+    padding: 10px;
     margin: 0;
+    color: white;
 }
 
 section {
-font-size: 20px;
 text-align: center;
 }
 
 a {
     text-decoration: none;
     color: rgb(89, 128, 255);
-}
-
-footer a {
-    color: black;
 }
 
 h1{
@@ -113,20 +129,30 @@ img{
     bottom: 0;
 }
 
-.backtomain a{
-    color: black;
+.rozcestnik {
+    display: flex;
+    border-bottom: hidden !important;
+    border-left: hidden !important;
+    border-right: hidden !important;
 }
 
-@keyframes change {
-    0% {border-color: rgb(255, 225, 0);}
-    10% {border-color: rgb(187, 255, 0);}
-    20% {border-color: rgb(30, 255, 0);}
-    30% {border-color: rgb(0, 255, 145);}
-    40% {border-color: rgb(0, 255, 221);}
-    50% {border-color: rgb(14, 0, 138);} 
-    60% {border-color: rgb(255, 0, 212);}
-    70% {border-color: rgb(255, 0, 0);}
-    80% {border-color: rgb(255, 123, 0);}
-    90% {border-color: rgb(255, 196, 0);}
-    100% {border-color: rgb(255, 225, 0);}
+.rozcestnik a {
+    color: white;
+}
+
+.box {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.colorwhite{
+    color: white;
+}
+
+.backgrey {
+    background-color: rgb(53, 53, 53);
+}
+
+.current{
+    background-color: rgb(28, 28, 28);
 }

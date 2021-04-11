@@ -3,6 +3,7 @@ table, th, td {
     border-collapse: collapse;
     color: black;
     image-rendering: auto;
+    background-color: white;
 }
 
 #wiki {

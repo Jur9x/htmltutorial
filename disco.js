@@ -2,7 +2,7 @@ var number = 0;
 
 function disco() {
     if (number == 0){
-    document.getElementById('button').classList.add('discobck');
+    /*document.getElementById('button').classList.add('discobck');*/
     document.getElementById('main').classList.add('discobck');
     document.getElementById('disco1').classList.add('discoclr');
     document.getElementById('disco2').classList.add('discoclr');
@@ -13,7 +13,7 @@ function disco() {
     return number = 1;
     }
     if (number == 1){
-        document.getElementById('button').classList.remove('discobck');
+        /*document.getElementById('button').classList.remove('discobck');*/
         document.getElementById('main').classList.remove('discobck');
         document.getElementById('disco1').classList.remove('discoclr');
         document.getElementById('disco2').classList.remove('discoclr');

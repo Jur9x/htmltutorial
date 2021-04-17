@@ -44,7 +44,7 @@ footer a {
 
 .border{
     border: solid 4px;
-    animation: 20s infinite changecolor;
+    animation: 40s infinite changecolor;
 }
 
 @keyframes changecolor {
@@ -73,6 +73,20 @@ footer a {
     80% {background-color: rgb(255, 123, 0);}
     90% {background-color: rgb(255, 196, 0);}
     100% {background-color: rgb(255, 225, 0);}
+}
+
+@keyframes changebckclear {
+    0% {background: rgb(255, 225, 0);}
+    10% {background: rgb(187, 255, 0);}
+    20% {background: rgb(30, 255, 0);}
+    30% {background: rgb(0, 255, 145);}
+    40% {background: rgb(0, 255, 221);}
+    50% {background: rgb(14, 0, 138);} 
+    60% {background: rgb(255, 0, 212);}
+    70% {background: rgb(255, 0, 0);}
+    80% {background: rgb(255, 123, 0);}
+    90% {background: rgb(255, 196, 0);}
+    100% {background: rgb(255, 225, 0);}
 }
 
 @keyframes changeclr {
@@ -177,9 +191,13 @@ img{
 
 .button{
     padding: 5px;
-    background-color: white;
-    position:absolute;
-    right:0px;
+    color: white;
+    position: absolute;
+    right: 0px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(53, 53, 53);
+    border: none;
 }
 
 .discobck {
@@ -189,3 +207,28 @@ img{
 .discoclr {
     animation: 3s infinite changeclr !important; 
 }
+
+button:hover, button:focus {
+      outline: none;
+}
+
+button:active{
+    background-color: rgb(28, 28, 28);
+}
+
+
+  ::-webkit-scrollbar{
+    width: 14px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(77, 77, 77);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(133, 133, 133);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(28, 28, 28);
+  }

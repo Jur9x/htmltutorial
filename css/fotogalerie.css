@@ -1,6 +1,7 @@
 div.gallery {
     margin: 0.8%;
     border: 2px solid black;
+    border-radius: 4%;
     width: 23%;
     float: left;
     background-color: rgb(53, 53, 53);
@@ -12,6 +13,7 @@ div.gallery:hover {
 }
   
 div.gallery img {
+    border-radius: 4%;
     width: 100%;
     height: auto;
     border: hidden;

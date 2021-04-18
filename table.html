@@ -1,63 +1,82 @@
 <!DOCTYPE html>
 <html lang="cs">
     <head>
-        <title>Table | Tutorial</title>
+        <title>Tabulky | Tutorial</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/table.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/table.css" rel="stylesheet">
         <link rel="icon" href="img/icon.ico">
     </head>
     <body>
-        <header class="border backgrey"><h1 id="disco1">Tabulka</h1>
+        <header class="border backgrey"><h1 id="disco1">Tabulky</h1>
             <div class="rozcestnik colorwhite border">
                 <a id="disco2" class="box current" href="table.html">Tabulka</a>
                 <a id="disco3" class="box" href="multimedia.html">Multimedia</a>
-                <a id="disco4" class="box" href="fotogalerie.html">Fotogalerie</a>
+                <a id="disco4" class="box" href="index.html">Fotogalerie</a>
                 <button id="button" type="button" class="button" onclick="disco()">Disco</button>
             </div></header>
     <main id="main">
         <section id="tabulka">
-            <h2><span>Karel Gott</span></h2>
+            <h2 class="border podnadpis">Karel Gott</h2>
+            <br>
             <table class="center">
-                <thead><tr><th>Portrét</th><th colspan="2">Základní údaje</th><th>Významné činy</th></tr></thead>
+                <thead>
+                    <tr>
+                        <th>Portrét</th>
+                        <th colspan="2">Základní údaje</th>
+                        <th>Významné činy</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
                         <td rowspan="3"><img id="got" src="img/got.png" alt=""></td>
-                        <td colspan="2">Karel Gott</td>
-                        <td rowspan="4"><dl>
-                            <dt>Díla</dt>
-                            <dd>Trezor</dd>
-                            <dd>Oči sněhem zaváte</dd>
-                            <dd>Ptačí nářečí</dd>
-                            <dd>Včelka Mája</dd>
-                            <dd>Srdce nehasnou</dd>
-                            <dd>Jdi za štěstím</dd>
-                            <dd>Jen se hádej</dd>
-                            <dd>Lady Carneval</dd>
-                            <dd>Čau, lásko</dd>
-                        </dl></td>
+                        <td class="tableyellow" colspan="2">Karel Gott</td>
+                        <td class="tableorange" rowspan="4">
+                            Díla
+                            <br>
+                            Trezor
+                            <br>
+                            Oči sněhem zaváte
+                            <br>
+                            Ptačí nářečí
+                            <br>
+                            Včelka Mája
+                            <br>
+                            Srdce nehasnou
+                            <br>
+                            Jdi za štěstím
+                            <br>
+                            Jen se hádej
+                            <br>
+                            Lady Carneval
+                            <br>
+                            Čau, lásko
                     </tr>
                     <tr>
-                        <td>14. 6. 1939</td>
-                        <td>1. 10. 2019</td>
+                        <td class="tablegreen">14. 6. 1939</td>
+                        <td class="tablered">1. 10. 2019</td>
                     </tr>
                     <tr>
-                        <td colspan="2" rowspan="2" id="char">Byl český zpěvák, herec a malíř. V letech 1965–2019 se prodalo 50 milionů nosičů hudebních alb s jeho nahrávkami, což z něj učinilo nejúspěšnějšího českého interpreta. Během kariéry vydal 293 sólových alb na domácí scéně i v zahraničí. Zpíval nejen česky, ale i německy, latinsky, anglicky, italsky a rusky.</td>
+                        <td class="tableorange" colspan="2" rowspan="2" id="char">Byl český zpěvák, herec a malíř. Za jeho život se
+                            prodalo 50 milionů nosičů hudebních alb s jeho nahrávkami, což z něj učinilo nejúspěšnějšího českého
+                            interpreta. Během kariéry vydal 293 sólových alb na domácí scéně i v zahraničí.</td>
                     </tr>
                     <tr>
-                        <td>Fotka Karla Gotta</td>
+                        <td class="tableyellow">Fotka Karla Gotta</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="4" id="wiki"><a href="https://cs.wikipedia.org/wiki/Karel_Gott" target="_blank">Wikipedie</a></td>
+                        <td class="tableblue" colspan="4" id="wiki"><a href="https://cs.wikipedia.org/wiki/Karel_Gott"
+                                target="_blank">Wikipedie</a></td>
                     </tr>
                 </tfoot>
             </table>
+            <br>
         </section>
         <section id="atributy">
-            <h2><span class="borderbottom">Značky a atributy tabulky</span></h2>
+            <h2 class="border podnadpis">Značky a atributy tabulky</h2>
             <div>  
                 <dl>
                 <dt><strong>colspan</strong></dt> 
@@ -67,7 +86,7 @@
                 <dt><strong>id</strong></dt>
                 <dd>Atribut pro označení 1 tabulky </dd>
             </dl> 
-                <h3 class="h3 italic"><span class="borderbottom">HTML (&lt; >)</span></h3>
+                <h3 class="italic podnadpis border"><span class="borderbottom">HTML (&lt; >)</span></h3>
                 <dl>
                 <dt><strong>table</strong></dt>
                 <dd>Základní atribut, tvoří tabulku</dd>
@@ -80,7 +99,7 @@
                 <dt><strong>caption</strong></dt>
                 <dd>Atribut, co přidává popisek tabulky</dd>
             </dl>
-                <h3 class="h3 italic"><span class="borderbottom">CSS</span></h3>
+                <h3 class="italic podnadpis border"><span class="borderbottom">CSS</span></h3>
                 <dl>
                 <dt><strong>border</strong></dt>
                 <dd>Definuje ohraničení tabulky</dd>

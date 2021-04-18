@@ -20,7 +20,7 @@ header{
 
 main{
     font-size: 20px;
-    padding-top: 4%;
+    padding-top: 6%;
     padding-bottom: 4%;
     margin: 0;
 }
@@ -123,7 +123,7 @@ header > h1{
 }
 
 section {
-text-align: center;
+    text-align: center;
 }
 
 a {
@@ -146,6 +146,13 @@ h3{
     font-size: 23px;
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+.podnadpis{
+    background-color: lightblue;
+    max-width: fit-content;
+    margin: auto;
+    padding: 5px 10px 5px 10px;
 }
 
 img{

@@ -1,0 +1,3 @@
+audio:hover, audio:focus, video:hover, video:focus {
+    outline: none;
+}

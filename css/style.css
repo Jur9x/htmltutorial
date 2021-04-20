@@ -3,16 +3,13 @@ html, body {
     padding:0;
     width:100%;
     height:100%;
+    font-family: sans-serif;
     }
 
 header{
     font-size: 20px;
     margin: auto;
     text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     border-top: hidden !important;
     border-left: hidden !important;
     border-right: hidden !important;
@@ -20,19 +17,16 @@ header{
 
 main{
     font-size: 20px;
-    padding-top: 6%;
-    padding-bottom: 4%;
+    padding-top: 2%;
+    padding-bottom: 1%;
     margin: 0;
 }
 
 footer {
     font-size: 20px;
+    padding-bottom: 0.1%;
     margin: auto;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     border-bottom: hidden !important;
     border-left: hidden !important;
     border-right: hidden !important;
@@ -170,9 +164,16 @@ img{
 
 .rozcestnik {
     display: flex;
-    border-bottom: hidden !important;
+    border-top: hidden !important;
     border-left: hidden !important;
     border-right: hidden !important;
+}
+
+nav{
+    position: sticky;
+    height: 1%;
+    top: 0;
+    width:100%;
 }
 
 .rozcestnik a {

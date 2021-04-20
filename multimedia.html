@@ -9,13 +9,15 @@
         <link rel="icon" href="img/icon.ico">
     </head>
     <body>
-    <header class="backgrey border"><h1 id="disco1">Multimedia</h1>
-        <div class="rozcestnik colorwhite border">
+    <header class="backgrey border"><h1 id="disco1">Multimedia</h1></header>
+    <nav>
+        <div class="rozcestnik backgrey colorwhite border">
             <a id="disco2" class="box" href="table.html">Tabulka</a>
             <a id="disco3" class="box current" href="multimedia.html">Multimedia</a>
             <a id="disco4" class="box" href="index.html">Fotogalerie</a>
-            <button id="butto" type="button" class="button" onclick="disco()">Disco</button>
-        </div></header>
+            <button id="button" type="button" class="button" onclick="disco()">Disco</button>
+        </div>
+    </nav>
     <main id="main">
         <section>
             <h2 class="border podnadpis">Obrázek</h2>
@@ -42,6 +44,16 @@
                 Váš prohlížeč nepodporuje tento formát souboru.                  
                 </audio>
             <figcaption>Zvuk ze zábavného videa</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2 class="border podnadpis">YT Video</h2>
+            <figure>
+                <iframe width="420" height="236" src="https://www.youtube.com/embed/zhf1pIl007o"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                <figcaption>Can you tell the time?</figcaption>
             </figure>
         </section>
     </main>

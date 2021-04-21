@@ -4,17 +4,17 @@
         <title>Multimedia | Tutorial</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/multimedia.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="icon" href="img/icon.ico">
+        <link href="../css/multimedia.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <link rel="icon" href="../icon.ico">
     </head>
     <body>
     <header class="backgrey border"><h1 id="disco1">Multimedia</h1></header>
     <nav>
         <div class="rozcestnik backgrey colorwhite border">
-            <a id="disco2" class="box" href="table.html">Tabulka</a>
-            <a id="disco3" class="box current" href="multimedia.html">Multimedia</a>
-            <a id="disco4" class="box" href="index.html">Fotogalerie</a>
+            <a id="disco2" class="box" href="../table/table.html">Tabulka</a>
+            <a id="disco3" class="box current" href="../media/multimedia.html">Multimedia</a>
+            <a id="disco4" class="box" href="../index.html">Fotogalerie</a>
             <button id="button" type="button" class="button" onclick="disco()">Disco</button>
         </div>
     </nav>
@@ -30,7 +30,7 @@
             <h2 class="border podnadpis">Video</h2>
             <figure>
             <video width="320" height="240" controls muted>
-                <source src="media/vid.mp4" type="video/mp4">
+                <source src="src/vid.mp4" type="video/mp4">
                     Váš prohlížeč nepodporuje tento formát souboru.
             </video>
             <figcaption>Zábavné video</figcaption>
@@ -40,7 +40,7 @@
             <h2 class="border podnadpis">Zvuk</h2>
             <figure>
             <audio controls>
-                <source src="media/audio.mp3" type="audio/mp3">
+                <source src="src/audio.mp3" type="audio/mp3">
                 Váš prohlížeč nepodporuje tento formát souboru.                  
                 </audio>
             <figcaption>Zvuk ze zábavného videa</figcaption>
@@ -60,6 +60,6 @@
     <footer class="backgrey colorwhite border">
         <p id="disco5">&copy; 2021 - Ryba Jiří, <a id="disco6" href="https://www.sspu-opava.cz/cs/" target="_blank">SŠPU Opava</a></p>
     </footer>
-    <script src="disco.js"></script>
+    <script src="../js/disco.js"></script>
     </body>
 </html>

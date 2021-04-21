@@ -176,6 +176,11 @@ nav{
     padding: 5px;
 }
 
+.box:hover{
+    background-color: blue;
+    color: white !important;
+}
+
 .colorwhite{
     color: white;
 }

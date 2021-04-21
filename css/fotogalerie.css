@@ -54,3 +54,7 @@ div.desc {
 #main {
     padding-bottom: 39.8%;
 }
+
+h2 > a {
+    color: black;
+}
